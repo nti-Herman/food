@@ -1,1 +1,11 @@
 /* Denna fil skall innehålla din CSS kod */
+
+
+body {
+    background-image: url(../img/pablo-merchan-montes-dc_JMu8lb5U-unsplash.jpg);
+    background-size: 100vw 200vh;
+}
+
+#container {
+    display: grid;
+}
