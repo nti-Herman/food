@@ -1,11 +1,61 @@
 /* Denna fil skall innehålla din CSS kod */
 
+* {
+    margin: 0;
+}
 
 body {
-    background-image: url(../img/pablo-merchan-montes-dc_JMu8lb5U-unsplash.jpg);
-    background-size: 100vw 200vh;
+    background-image: url(../img/pablo-merchan-montes-dc_JMu8lb5U-unsplash.jpg), url(../img/joshua-bartell-6vvIBTvL90A-unsplash.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat, repeat;
 }
 
 #container {
     display: grid;
+    width: 100vw;
+    height: 200vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr 3fr 3fr;
+    grid-template-areas: 
+    'hd1 hd2'
+    '. .'
+    'me öp'
+    'co bo';
+}
+
+#header1 {
+    grid-area: hd1;
+}
+
+#header2 {
+    grid-area: hd2;
+}
+
+p {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#meny {
+    grid-area: me;
+    background: rgb(255, 255, 255);
+    margin: 50px;
+}
+
+#bokabord {
+    grid-area: bo;
+    background: rgb(255, 255, 255);
+    margin: 50px;
+}
+
+#coronainfo{
+    grid-area: co;
+    background: rgb(255, 255, 255);
+    margin: 50px;
+}
+
+#öppettider {
+    grid-area: öp;
+    background: rgb(255, 255, 255);
+    margin: 50px;
 }
