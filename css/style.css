@@ -13,14 +13,15 @@ body {
 #container {
     display: grid;
     width: 100vw;
-    height: 200vh;
+    height: 235vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 5fr 3fr 3fr;
+    grid-template-rows: 1fr 5fr 3fr 3fr 2fr;
     grid-template-areas: 
     'hd1 hd2'
-    '. .'
-    'me öp'
-    'co bo';
+    'bl bl'
+    'aC aC'
+    'aC aC'
+    'fo fo';
 }
 
 #header1 {
@@ -32,30 +33,52 @@ body {
 }
 
 p {
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+#blank {
+    display: flex;
+    grid-area: bl;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#articleContainer {
+    display: grid;
+    grid-area: aC;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
 #meny {
-    grid-area: me;
     background: rgb(255, 255, 255);
     margin: 50px;
 }
 
 #bokabord {
-    grid-area: bo;
     background: rgb(255, 255, 255);
     margin: 50px;
 }
 
 #coronainfo{
-    grid-area: co;
     background: rgb(255, 255, 255);
     margin: 50px;
 }
 
 #öppettider {
-    grid-area: öp;
     background: rgb(255, 255, 255);
     margin: 50px;
+}
+
+footer {
+    grid-area: fo;
+    background: rgb(56, 56, 56);
+    border-top: solid black 3px;
+}
+
+#linkDown {
+    margin-bottom: 10%;
 }
