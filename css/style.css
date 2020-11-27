@@ -82,3 +82,11 @@ footer {
 #linkDown {
     margin-bottom: 10%;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+#logo {
+    margin: 25px;
+}
