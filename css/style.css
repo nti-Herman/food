@@ -2,10 +2,11 @@
 
 * {
     margin: 0;
+    font-family: TheBoldFont;
 }
 
 body {
-    background-image: url(../img/pablo-merchan-montes-dc_JMu8lb5U-unsplash.jpg), url(../img/joshua-bartell-6vvIBTvL90A-unsplash.jpg);
+    background-image: url(../img/pablo-merchan-montes-dc_JMu8lb5U-unsplash.jpg);
     background-size: 100vw 100vh;
     background-repeat: no-repeat, repeat;
 }
@@ -13,38 +14,54 @@ body {
 #container {
     display: grid;
     width: 100vw;
-    height: 235vh;
+    height: 225vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 5fr 3fr 3fr 2fr;
+    grid-template-rows: 1fr 5fr 4fr 4fr 2fr;
     grid-template-areas: 
-    'hd1 hd2'
-    'bl bl'
+    'lo hd2'
+    'iB iB'
     'aC aC'
     'aC aC'
     'fo fo';
+    background-image: url(../img/pablo-merchan-montes-dc_JMu8lb5U-unsplash.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat, repeat
 }
 
-#header1 {
-    grid-area: hd1;
-}
-
-#header2 {
+#header {
     grid-area: hd2;
 }
 
-p {
-    color: rgb(255, 255, 255);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+#innerBlank {
+    grid-area: iB;
+    display: grid;
+    width: 100vw;
+    height: 75vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas:
+    'bl1'
+    'bl2';
 }
 
-#blank {
+#blank1 {
+    grid-area: bl1;
     display: flex;
-    grid-area: bl;
+    justify-content: center;
+    align-items: center;
+}
+
+#blank2 {
+    grid-area: bl2;
+    display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
+
 #articleContainer {
+    background-image: url(../img/joshua-bartell-6vvIBTvL90A-unsplash.jpg);
+    background-size: 100vw 100vh;
     display: grid;
     grid-area: aC;
     width: 100vw;
@@ -53,30 +70,16 @@ p {
     grid-template-rows: 1fr 1fr;
 }
 
-#meny {
+.info {
     background: rgb(255, 255, 255);
     margin: 50px;
+    margin-left: 150px;
 }
 
-#bokabord {
-    background: rgb(255, 255, 255);
-    margin: 50px;
-}
-
-#coronainfo{
-    background: rgb(255, 255, 255);
-    margin: 50px;
-}
-
-#öppettider {
-    background: rgb(255, 255, 255);
-    margin: 50px;
-}
 
 footer {
     grid-area: fo;
-    background: rgb(56, 56, 56);
-    border-top: solid black 3px;
+    background: rgb(19, 19, 19);
 }
 
 #linkDown {
@@ -88,5 +91,33 @@ html {
 }
 
 #logo {
+    grid-area: lo;
     margin: 25px;
+    position: -webkit-sticky;
+  position: sticky;
+  top: 25px;
+}
+
+@font-face {
+    font-family: TheBoldFont;
+    src: url(theboldfont.ttf)
+}
+
+h2 {
+    font-size: 300%;
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+    font-size: 200%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+p {
+    display: inline;
+    margin-left: 10px;
+    margin-bottom: 100px;
 }
