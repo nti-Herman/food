@@ -11,6 +11,12 @@ body {
     background-repeat: no-repeat, repeat;
 }
 
+#indexMenu {
+    background-image: url(../img/joshua-bartell-6vvIBTvL90A-unsplash.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat, repeat;
+}
+
 #container {
     display: grid;
     width: 100vw;
@@ -23,9 +29,6 @@ body {
     'aC aC'
     'aC aC'
     'fo fo';
-    background-image: url(../img/pablo-merchan-montes-dc_JMu8lb5U-unsplash.jpg);
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat, repeat
 }
 
 #header {
@@ -70,12 +73,65 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 
-.info {
+#Meny {
+    display: grid;
+    margin: 50px;
+    margin-left: 150px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: rgb(255, 255, 255);
+}
+
+.meny {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#Booking {
+    display: grid;
+    background: rgb(255, 255, 255);
+    margin: 50px;
+    margin-right: 150px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.booking {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#Corona {
+    display: grid;
     background: rgb(255, 255, 255);
     margin: 50px;
     margin-left: 150px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
+.corona {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#Opening {
+    display: grid;
+    background: rgb(255, 255, 255);
+    margin: 50px;
+    margin-right: 150px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.opening {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 footer {
     grid-area: fo;
@@ -111,13 +167,12 @@ h2 {
 h3 {
     font-size: 200%;
     color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
+    margin-top: 10%;
+    text-decoration: underline;
 }
 
-p {
-    display: inline;
-    margin-left: 10px;
-    margin-bottom: 100px;
+button {
+    padding: 10px 5px;
+    font-size: 100%;
 }
+
