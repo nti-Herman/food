@@ -9,12 +9,7 @@ body {
     background-image: url(../img/pablo-merchan-montes-dc_JMu8lb5U-unsplash.jpg);
     background-size: 100vw 100vh;
     background-repeat: no-repeat, repeat;
-}
-
-#indexMenu {
-    background-image: url(../img/joshua-bartell-6vvIBTvL90A-unsplash.jpg);
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
 }
 
 #container {
@@ -103,7 +98,7 @@ body {
     flex-wrap: wrap;
 }
 
-#Corona {
+#FindUs {
     display: grid;
     background: rgb(255, 255, 255);
     margin: 50px;
@@ -112,7 +107,7 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 
-.corona {
+.findUs {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -135,6 +130,7 @@ body {
 
 footer {
     grid-area: fo;
+    height: 26vh;
     background: rgb(19, 19, 19);
 }
 
@@ -176,3 +172,132 @@ button {
     font-size: 100%;
 }
 
+/*---------------Här nedan kommer kod för sida "meny"------------------------------*/
+
+#indexMenu {
+    background-image: url(../img/joshua-bartell-6vvIBTvL90A-unsplash.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat, repeat;
+}
+
+#menuContainer {
+    display: grid;
+    width: 100vw;
+    height: 250vh;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr 5fr 1fr 5fr 1fr;
+    grid-template-areas: 
+    'mlo mhe mhe .'
+    '. mar1 mar2 .'
+    '. md1 md2 .'
+    '. mar3 mar4 .'
+    '. md3 md4 .'
+    '. mar5 mar6 .'
+    '. md5 md6 .';
+}
+
+#menuHeader {
+    grid-area: mhe;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+}
+
+#menuLogo {
+    grid-area: mlo;
+    margin: 25px;
+    position: -webkit-sticky;
+  position: sticky;
+  top: 25px;
+}
+
+#menuArticle1 {
+    grid-area: mar1;
+    background: rgb(255, 255, 255);
+    margin-right: 4%;
+    margin-top: 4%;
+    background-image: url(../img/amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg);
+    background-size: 109%;
+}
+#menuArticle2 {
+    grid-area: mar2;
+    background: rgb(255, 255, 255);
+    margin-left: 4%;
+    margin-top: 4%;
+    background-image: url(../img/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg);
+    background-size: 100%;
+}
+
+#menuArticle3 {
+    grid-area: mar3;
+    background: rgb(255, 255, 255);
+    margin-right: 4%;
+    margin-top: 4%;
+    background-image: url(../img/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg);
+    background-size: 100%;
+}
+
+#menuArticle4 {
+    grid-area: mar4;
+    background: rgb(255, 255, 255);
+    margin-left: 4%;
+    margin-top: 4%;
+    background-image: url(../img/amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg);
+    background-size: 109%;
+}
+
+#menuArticle5 {
+    grid-area: mar5;
+    background: rgb(255, 255, 255);
+    margin-right: 4%;
+    margin-top: 4%;
+    background-image: url(../img/amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg);
+    background-size: 109%;
+}
+
+#menuArticle6 {
+    grid-area: mar6;
+    background: rgb(255, 255, 255);
+    margin-left: 4%;
+    margin-top: 4%;
+    background-image: url(../img/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg);
+    background-size: 100%;
+}
+
+#menuDes1 {
+    grid-area: md1;
+    background: rgb(255, 255, 255);
+    margin-right: 4%;
+}
+
+#menuDes2 {
+    grid-area: md2;
+    background: rgb(255, 255, 255);
+    margin-left: 4%;
+}
+
+#menuDes3 {
+    grid-area: md3;
+    background: rgb(255, 255, 255);
+    margin-right: 4%;
+}
+
+#menuDes4 {
+    grid-area: md4;
+    background: rgb(255, 255, 255);
+    margin-left: 4%;
+}
+
+#menuDes5 {
+    grid-area: md5;
+    background: rgb(255, 255, 255);
+    margin-right: 4%;
+}
+
+#menuDes6 {
+    grid-area: md6;
+    background: rgb(255, 255, 255);
+    margin-left: 4%;
+}
