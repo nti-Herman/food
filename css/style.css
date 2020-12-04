@@ -6,9 +6,9 @@
 }
 
 body {
-    background-image: url(../img/pablo-merchan-montes-dc_JMu8lb5U-unsplash.jpg);
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat, repeat;
+    background-image: url(../img/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
@@ -58,7 +58,7 @@ body {
 
 
 #articleContainer {
-    background-image: url(../img/joshua-bartell-6vvIBTvL90A-unsplash.jpg);
+    background-image: url(../img/woodbackground.jpg);
     background-size: 100vw 100vh;
     display: grid;
     grid-area: aC;
@@ -74,7 +74,9 @@ body {
     margin-left: 150px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    background: rgb(255, 255, 255);
+    background-image: url(../img/grill.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
 }
 
 .meny {
@@ -83,6 +85,18 @@ body {
     flex-wrap: wrap;
 }
 
+.button {
+    border: solid rgb(19, 19, 19);
+    background: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.button:hover {
+    background: rgb(19, 19, 19);
+    color: rgb(255, 255, 255);
+}
+
+
 #Booking {
     display: grid;
     background: rgb(255, 255, 255);
@@ -90,6 +104,9 @@ body {
     margin-right: 150px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    background-image: url(../img/booking.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .booking {
@@ -132,6 +149,10 @@ footer {
     grid-area: fo;
     height: 26vh;
     background: rgb(19, 19, 19);
+    background-image: url(../img/logo.svg);
+    background-size: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #linkDown {
@@ -162,9 +183,12 @@ h2 {
 
 h3 {
     font-size: 200%;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-top: 10%;
-    text-decoration: underline;
+}
+
+h4 {
+    color: rgb(83, 83, 83);
 }
 
 button {
@@ -175,7 +199,7 @@ button {
 /*---------------Här nedan kommer kod för sida "meny"------------------------------*/
 
 #indexMenu {
-    background-image: url(../img/joshua-bartell-6vvIBTvL90A-unsplash.jpg);
+    background-image: url(../img/woodbackground.jpg);
     background-size: 100vw 100vh;
     background-repeat: no-repeat, repeat;
 }
@@ -185,24 +209,23 @@ button {
     width: 100vw;
     height: 250vh;
     grid-template-columns: 1fr 4fr 4fr 1fr;
-    grid-template-rows: 1fr 5fr 1fr 5fr 1fr 5fr 1fr;
+    grid-template-rows: 1fr 5fr 5fr 5fr;
     grid-template-areas: 
     'mlo mhe mhe .'
     '. mar1 mar2 .'
-    '. md1 md2 .'
     '. mar3 mar4 .'
-    '. md3 md4 .'
-    '. mar5 mar6 .'
-    '. md5 md6 .';
+    '. mar5 mar6 .';
 }
 
 #menuHeader {
     grid-area: mhe;
-    background: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 200%;
+    background-image: url(../img/grill.jpg);
+    background-size: 100%;
 }
 
 #menuLogo {
@@ -218,16 +241,21 @@ button {
     background: rgb(255, 255, 255);
     margin-right: 4%;
     margin-top: 4%;
-    background-image: url(../img/amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg);
-    background-size: 109%;
+    background-image: url(../img/burger1.jpg);
+    background-size: 130%;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    padding: 2%;
 }
 #menuArticle2 {
     grid-area: mar2;
     background: rgb(255, 255, 255);
     margin-left: 4%;
     margin-top: 4%;
-    background-image: url(../img/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg);
-    background-size: 100%;
+    background-image: url(../img/burger2.jpg);
+    background-size: 110%;
+    color: rgb(255, 255, 255);
+    padding: 2%;
 }
 
 #menuArticle3 {
@@ -235,8 +263,10 @@ button {
     background: rgb(255, 255, 255);
     margin-right: 4%;
     margin-top: 4%;
-    background-image: url(../img/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg);
-    background-size: 100%;
+    background-image: url(../img/burger2.jpg);
+    background-size: 110%;
+    color: rgb(255, 255, 255);
+    padding: 2%;
 }
 
 #menuArticle4 {
@@ -244,8 +274,11 @@ button {
     background: rgb(255, 255, 255);
     margin-left: 4%;
     margin-top: 4%;
-    background-image: url(../img/amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg);
-    background-size: 109%;
+    background-image: url(../img/burger1.jpg);
+    background-size: 130%;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    padding: 2%;
 }
 
 #menuArticle5 {
@@ -253,8 +286,11 @@ button {
     background: rgb(255, 255, 255);
     margin-right: 4%;
     margin-top: 4%;
-    background-image: url(../img/amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg);
-    background-size: 109%;
+    background-image: url(../img/burger1.jpg);
+    background-size: 130%;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    padding: 2%;
 }
 
 #menuArticle6 {
@@ -262,42 +298,8 @@ button {
     background: rgb(255, 255, 255);
     margin-left: 4%;
     margin-top: 4%;
-    background-image: url(../img/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg);
-    background-size: 100%;
-}
-
-#menuDes1 {
-    grid-area: md1;
-    background: rgb(255, 255, 255);
-    margin-right: 4%;
-}
-
-#menuDes2 {
-    grid-area: md2;
-    background: rgb(255, 255, 255);
-    margin-left: 4%;
-}
-
-#menuDes3 {
-    grid-area: md3;
-    background: rgb(255, 255, 255);
-    margin-right: 4%;
-}
-
-#menuDes4 {
-    grid-area: md4;
-    background: rgb(255, 255, 255);
-    margin-left: 4%;
-}
-
-#menuDes5 {
-    grid-area: md5;
-    background: rgb(255, 255, 255);
-    margin-right: 4%;
-}
-
-#menuDes6 {
-    grid-area: md6;
-    background: rgb(255, 255, 255);
-    margin-left: 4%;
+    background-image: url(../img/burger2.jpg);
+    background-size: 110%;
+    color: rgb(255, 255, 255);
+    padding: 2%;
 }
