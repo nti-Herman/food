@@ -20,7 +20,7 @@ body {
     grid-template-rows: 1fr 5fr 4fr 4fr 2fr;
     grid-template-areas: 
     'lo hd2'
-    'iB iB'
+    'iB iB' 
     'aC aC'
     'aC aC'
     'fo fo';
@@ -97,19 +97,19 @@ body {
 }
 
 
-#Booking {
+#Snacks {
     display: grid;
     background: rgb(255, 255, 255);
     margin: 50px;
     margin-right: 150px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    background-image: url(../img/booking.jpg);
+    background-image: url(../img/siders.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-.booking {
+.snacks {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -122,12 +122,16 @@ body {
     margin-left: 150px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    background-image: url(../img/booking.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .findUs {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    color: rgb(255, 255, 255);
 }
 
 #Opening {
@@ -137,17 +141,21 @@ body {
     margin-right: 150px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    background-image: url(../img/restaurant.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .opening {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    color: rgb(255, 255, 255);
 }
 
 footer {
     grid-area: fo;
-    height: 26vh;
+    height: 25vh;
     background: rgb(19, 19, 19);
     background-image: url(../img/logo.svg);
     background-size: 5%;
@@ -189,6 +197,7 @@ h3 {
 
 h4 {
     color: rgb(83, 83, 83);
+    margin: 2%;
 }
 
 button {
@@ -302,4 +311,116 @@ button {
     background-size: 110%;
     color: rgb(255, 255, 255);
     padding: 2%;
+}
+
+/*----------------------------*/
+
+ #indexSnacks {
+    background-image: url(../img/woodbackground.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat, repeat;
+}
+
+#snacksContainer {
+    display: grid;
+    width: 100vw;
+    height: 250vh;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 1fr 5fr 5fr 5fr;
+    grid-template-areas: 
+    'mlo mhe mhe .'
+    '. mar1 mar2 .'
+    '. mar3 mar4 .'
+    '. mar5 mar6 .';
+}
+
+#snacksHeader {
+    grid-area: mhe;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    background-image: url(../img/siders.jpg);
+    background-size: 100%;
+}
+
+#snacksLogo {
+    grid-area: mlo;
+    margin: 25px;
+    position: -webkit-sticky;
+  position: sticky;
+  top: 25px;
+}
+
+#snacksArticle1 {
+    grid-area: mar1;
+    background: rgb(255, 255, 255);
+    margin-right: 4%;
+    margin-top: 4%;
+    background-image: url(../img/sweetpotatofries.jpg);
+    background-size: 100%;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    padding: 2%;
+}
+#snacksArticle2 {
+    grid-area: mar2;
+    background: rgb(255, 255, 255);
+    margin-left: 4%;
+    margin-top: 4%;
+    background-image: url(../img/potatofries.jpg);
+    background-size: 110%;
+    color: rgb(255, 255, 255);
+    padding: 2%;
+}
+
+#snacksArticle3 {
+    grid-area: mar3;
+    background: rgb(255, 255, 255);
+    margin-right: 4%;
+    margin-top: 4%;
+    background-image: url(../img/beer.jpg);
+    background-size: 110%;
+    color: rgb(0, 0, 0);
+    padding: 2%;
+}
+
+#snacksArticle4 {
+    grid-area: mar4;
+    background: rgb(255, 255, 255);
+    margin-left: 4%;
+    margin-top: 4%;
+    background-image: url(../img/sweetpotatofries.jpg);
+    background-size: 100%;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    padding: 2%;
+}
+
+#snacksArticle5 {
+    grid-area: mar5;
+    background: rgb(255, 255, 255);
+    margin-right: 4%;
+    margin-top: 4%;
+    background-image: url(../img/potatofries.jpg);
+    background-size: 110%;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    padding: 2%;
+}
+
+#snacksArticle6 {
+    grid-area: mar6;
+    background: rgb(255, 255, 255);
+    margin-left: 4%;
+    margin-top: 4%;
+    background-image: url(../img/beer.jpg);
+    background-size: 110%;
+    color: rgb(255, 255, 255);
+    padding: 2%;
+}
+
+.black {
+    color: rgb(0, 0, 0);
 }
