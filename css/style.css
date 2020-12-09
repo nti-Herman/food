@@ -23,7 +23,7 @@ body {
     'iB iB' 
     'aC aC'
     'aC aC'
-    'fo fo';
+    'fo1 fo2';
 }
 
 #header {
@@ -82,7 +82,7 @@ body {
 .meny {
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .button {
@@ -155,14 +155,23 @@ body {
     color: rgb(255, 255, 255);
 }
 
-footer {
-    grid-area: fo;
+#footer1 {
+    grid-area: fo1;
+    height: 25vh;
+    width: 52.5vw;
+    background: rgb(19, 19, 19);
+    background-image: url(../img/logoGray.svg);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#footer2 {
+    display: flex;
+    grid-area: fo2;
     height: 25vh;
     background: rgb(19, 19, 19);
-    background-image: url(../img/logo.svg);
-    background-size: 5%;
-    background-repeat: no-repeat;
-    background-position: center;
+    justify-content: flex-end;
 }
 
 #linkDown {
@@ -215,12 +224,13 @@ h4 {
     width: 100vw;
     height: 250vh;
     grid-template-columns: 1fr 4fr 4fr 1fr;
-    grid-template-rows: 1fr 5fr 5fr 5fr;
+    grid-template-rows: 1fr 5fr 5fr 5fr 1fr;
     grid-template-areas: 
     'mlo mhe mhe .'
     '. mar1 mar2 .'
     '. mar3 mar4 .'
-    '. mar5 mar6 .';
+    '. mar5 mar6 .'
+    'mfo1 mfo1 mfo2 mfo2';
 }
 
 #menuHeader {
@@ -310,6 +320,23 @@ h4 {
     padding: 2%;
 }
 
+#menuFooter1 {
+    grid-area: mfo1;
+    height: 25vh;
+    width: 53vw;
+    background: rgb(19, 19, 19);
+    margin-top: 4%;
+}
+
+#menuFooter2 {
+    display: flex;
+    grid-area: mfo2;
+    height: 25vh;
+    background: rgb(19, 19, 19);
+    justify-content: flex-end;
+    margin-top: 4%;
+}
+
 /*----------------------------*/
 
  #indexSnacks {
@@ -323,12 +350,13 @@ h4 {
     width: 100vw;
     height: 250vh;
     grid-template-columns: 1fr 4fr 4fr 1fr;
-    grid-template-rows: 1fr 5fr 5fr 5fr;
+    grid-template-rows: 1fr 5fr 5fr 5fr 1fr;
     grid-template-areas: 
     'mlo mhe mhe .'
     '. mar1 mar2 .'
     '. mar3 mar4 .'
-    '. mar5 mar6 .';
+    '. mar5 mar6 .'
+    'sfo1 sfo1 sfo2 sfo2';
 }
 
 #snacksHeader {
@@ -420,4 +448,21 @@ h4 {
 
 .black {
     color: rgb(0, 0, 0);
+}
+
+#snacksFooter1 {
+    grid-area: sfo1;
+    height: 25vh;
+    width: 53vw;
+    background: rgb(19, 19, 19);
+    margin-top: 4%;
+}
+
+#snacksFooter2 {
+    display: flex;
+    grid-area: sfo2;
+    height: 25vh;
+    background: rgb(19, 19, 19);
+    justify-content: flex-end;
+    margin-top: 4%;
 }
