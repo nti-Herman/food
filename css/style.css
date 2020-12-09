@@ -82,13 +82,15 @@ body {
 .meny {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .button {
     border: solid rgb(19, 19, 19);
     background: rgb(255, 255, 255);
     transition: 0.5s;
+    padding: 10px 5px;
+    font-size: 100%;
 }
 
 .button:hover {
@@ -198,11 +200,6 @@ h3 {
 h4 {
     color: rgb(83, 83, 83);
     margin: 2%;
-}
-
-button {
-    padding: 10px 5px;
-    font-size: 100%;
 }
 
 /*---------------Här nedan kommer kod för sida "meny"------------------------------*/
