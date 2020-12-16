@@ -2,11 +2,11 @@
 
 * {
     margin: 0;
-    font-family: TheBoldFont;
+    font-family: TheBoldFont; /*sätter rätt font på all text på hemsidan*/
 }
 
 body {
-    background-image: url(../img/background.jpg);
+    background-image: url(../img/background.jpg); 
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -42,7 +42,7 @@ body {
     'bl2';
 }
 
-#blank1 {
+#blank1 {                    /*blank = platsen där citatet på förstasidan står*/
     grid-area: bl1;
     display: flex;
     justify-content: center;
@@ -57,7 +57,7 @@ body {
 }
 
 
-#articleContainer {
+#articleContainer {          /*Container för navigationsboxarna*/
     background-image: url(../img/woodbackground.jpg);
     background-size: 100vw 100vh;
     display: grid;
@@ -93,7 +93,7 @@ body {
     font-size: 100%;
 }
 
-.button:hover {
+.button:hover { 
     background: rgb(19, 19, 19);
     color: rgb(255, 255, 255);
 }
@@ -175,11 +175,11 @@ body {
 }
 
 #linkDown {
-    margin-bottom: 10%;
+    margin-bottom: 10%; /*sätter margin på den lilla pilen mitt på hemsidan*/
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /*för att scrollfunktionen när man trycker på pilen ska va smooth*/
 }
 
 #logo {
@@ -192,7 +192,7 @@ html {
 
 @font-face {
     font-family: TheBoldFont;
-    src: url(theboldfont.ttf)
+    src: url(theboldfont.ttf)  /*Eget typsnitt inlagt då det inte finns i code från början*/
 }
 
 h2 {
@@ -209,6 +209,51 @@ h3 {
 h4 {
     color: rgb(83, 83, 83);
     margin: 2%;
+}
+
+#planering:link {
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+}
+
+#planering:visited {
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+}
+
+#planering:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#plats:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#plats:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#plats:hover {
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+}
+
+#insta:link {
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+}
+
+#insta:visited {
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+}
+
+#insta:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 /*---------------Här nedan kommer kod för sida "meny"------------------------------*/
@@ -337,7 +382,7 @@ h4 {
     margin-top: 4%;
 }
 
-/*----------------------------*/
+/*---------------Här nedan kommer kod för sida "snacks & dricka"------------------------------*/
 
  #indexSnacks {
     background-image: url(../img/woodbackground.jpg);
